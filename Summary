@@ -1,0 +1,34 @@
+House Price Prediction Using Machine Learning
+Project Summary
+
+This project aimed to develop a predictive model for real-estate prices
+utilizing machine-learning technology. The first stage consisted of
+performing exploratory analysis as well as cleaning the input dataset.
+Specifically, I searched for and removed extraneous, duplicate and/or
+missing records from the data that would impact the validity of the
+model; fortunately no issues were found and I did not have an
+inordinate number of items to validate. Since the data encompasses
+numerical and categorical variable types, I used One-Hot Encoding to
+convert the categorical variables into numerical values prior to using
+them in any machine learning model.
+
+After the cleaning process was complete, I separated the data set into
+80/20 splits (80% training and 20% test) for use in developing two
+predictive models; Linear Regression and Random Forest Regressor. To
+evaluate the accuracy of the predictions made by each of these models, I
+measured absolute (mean absolute error - MAE), root mean square (root
+mean square error - RMSE) and R² scores (a measure of how well the
+regression line fits the actual data points). The linear regression model
+yielded an R² score of approximately 0.65, while the random forest
+model yielded an R² of 0.61. Therefore, the linear regression model
+accounted for approximately 65% of the variation in price between
+homes, with this model being the most accurate of the two.
+
+To present the results, I created a number of graphs. The histogram
+illustrates that there were more homes priced below and between 200k
+than there were homes that were priced above the 200k price point. The
+correlation matrix provided an indication of how the different variables
+correlate to each other and which show a strong positive or negative
+correlation. For instance, property tax has a strong negative correlation
+to both housing type (single-family residence versus multi-family
+residence), and housing price.
